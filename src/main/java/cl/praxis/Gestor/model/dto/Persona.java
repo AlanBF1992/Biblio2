@@ -1,14 +1,24 @@
-package cl.praxis.Gestor.model;
+package cl.praxis.Gestor.model.dto;
 
 public class Persona {
+    private int id;
     private int edad;
     private String nombre;
     private String apellido;
 
-    public Persona(int edad, String nombre, String apellido) {
+    public Persona(int id, int edad, String nombre, String apellido) {
+        this.id = id;
         this.edad = edad;
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getEdad() {
